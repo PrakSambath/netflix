@@ -1,22 +1,38 @@
-# Convention Guide
+# Overview
 
-## Screen Size
-`````
-min-width: 1400px
-Grid column: 6
+## Project Information
+Name: **netflix-cambodia-clone**    
+Original: [Netflix Cambodia](www.netflix.com/kh)
 
-min-width: 1100px
-Grid column: 5
+## Folder Structure
+```
+/
+├── css
+│   ├── bootstrap.min.css
+│   ├── global.css
+│   ├── style.css
+│   └── swiper-bundle.min.css
+├── doc
+│   ├── convension.md
+│   └── markdown.md
+├── image
+│   └── logo.png
+├── js
+│   ├── bootstrap.bundle.min.js
+│   ├── global.js
+│   ├── script.js
+│   └── swiper-bundle.min.js
+├── browse.html
+├── index.html
+└── README.md
 
-min-width: 800px
-Grid column: 4
+```
 
-min-width: 500px
-Grid column: 3
+## Reference
+Preview: [link](#)    
+Convension guide: [link](doc\convension.md)     
+Markdown guide: [link](doc\markdown.md)
 
-max-width: 499px
-Grid column: 2
-
-
-Global
-Slider Padding: 0px 4vw
+## Framework
+[Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)        
+[Swiperjs 10.1.0](https://swiperjs.com/get-started)
