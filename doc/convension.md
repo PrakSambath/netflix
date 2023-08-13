@@ -7,7 +7,6 @@ Example: `<nav>`, `<main>`, `<header>`, `<footer>`, `<sidebar>`
 ### 1.2 CSS
 - Only use lowercase for define class and id 
 - Use dash (-) to seperate word
-- Use class selector to style the element
 
 ## 2. Grid System
 ### 2.1 Class name
@@ -15,7 +14,9 @@ Example: `<nav>`, `<main>`, `<header>`, `<footer>`, `<sidebar>`
 
 #### Example
 ```
-<div class="container col-6"></div>
+<div class="container">
+    <div class="col-6"></div>
+</div>
 ```
 ### 2.2 Usage
 Use column according to user device screen size
