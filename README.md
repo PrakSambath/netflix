@@ -1,12 +1,12 @@
 # Overview
 
 ## Project Information
-Name: **netflix-cambodia-clone**    
+Name: [netflix-cambodia-clone](https://praksambath.github.io/netflix-cambodia-clone/)    
 Original: [Netflix Cambodia](www.netflix.com/kh)
 
 ## Folder Structure
 ```
-/
+netflix
 ├── css
 │   ├── bootstrap.min.css
 │   ├── common.css
@@ -30,8 +30,7 @@ Original: [Netflix Cambodia](www.netflix.com/kh)
 
 ```
 
-## Reference
-Preview: [link](#)    
+## Document
 Convension guide: [link](doc/convension.md)     
 Markdown guide: [link](doc/markdown.md)
 
