@@ -32,8 +32,8 @@ Original: [Netflix Cambodia](www.netflix.com/kh)
 
 ## Reference
 Preview: [link](#)    
-Convension guide: [link](doc\convension.md)     
-Markdown guide: [link](doc\markdown.md)
+Convension guide: [link](doc/convension.md)     
+Markdown guide: [link](doc/markdown.md)
 
 ## Framework
 [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/)        
