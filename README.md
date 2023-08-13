@@ -9,8 +9,11 @@ Original: [Netflix Cambodia](www.netflix.com/kh)
 /
 ├── css
 │   ├── bootstrap.min.css
-│   ├── global.css
+│   ├── common.css
+│   ├── reset.css
 │   ├── style.css
+│   ├── style.css.map
+│   ├── style.scss
 │   └── swiper-bundle.min.css
 ├── doc
 │   ├── convension.md
@@ -19,10 +22,9 @@ Original: [Netflix Cambodia](www.netflix.com/kh)
 │   └── logo.png
 ├── js
 │   ├── bootstrap.bundle.min.js
-│   ├── global.js
 │   ├── script.js
 │   └── swiper-bundle.min.js
-├── browse.html
+├── .gitignore
 ├── index.html
 └── README.md
 
