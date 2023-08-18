@@ -18,7 +18,7 @@
 
 ## 2. Naming Rule / Property
 
-### 2.1 General Naming Rule
+### 2.1. General Naming Rule
 - Use `lowercase` for folder and file name.
 - Use `underscore` (_) to seperate word of folder or file.
 - Name folder and file according to its purpose.
