@@ -2,6 +2,7 @@
 ## Project information  
 ### Project name  
 **netflix-cambodia-clone**    
+Click on this [link](https://ubiquitous-adventure-y2jk9pg.pages.github.io/) to visit the deployment website
 ### Description 
 &nbsp;&nbsp;&nbsp;&nbsp;**Netflix Cambodia** is a platform that has website and mobile app to offer movie, tv show for watching on pc, laptop, tablet, smart tv and mobile phone according to the subscription plan.   
 For more information refer to original website [Netflix Cambodia](https://www.netflix.com/kh)   
