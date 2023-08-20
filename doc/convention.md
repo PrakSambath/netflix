@@ -46,3 +46,9 @@
 - Use `Camel case` for naming variable and function.
 - Use `let` to declare variable.
 - Use `variable` to store value.
+
+## 3. Grid System
+- Use bootstrap framework to organize grid column.
+- Use `12 columns` as blueprint
+- Use `margin` `left` and `right` `60px`
+- Gap between column `20px`
