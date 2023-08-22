@@ -2,6 +2,37 @@ body {
     background-color: #000000;
 
 }
+/***** Navigation *****/
+#nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    padding-top: 10px;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .brand{
+            img{
+                height: 20px;
+                width: auto;
+            }
+        }
+        
+        button{
+            background-color: red;
+            border-color: red;
+            height: 30px;
+            width: 60px;
+        }
+    }
+}
+
+
 
 #header {
     height: 500px;
