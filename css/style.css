@@ -1,1 +1,96 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  background-color: #000000;
+}
+
+#header {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+#header .bg-img {
+  background-image: url("/image/bg-1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+#header .bg-shadow {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.3) 60%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+#header .main {
+  z-index: 2;
+}
+#header .main .register {
+  display: flex;
+  flex-direction: column;
+}
+#header .main .register .title {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+#header .main .register .sub-title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0;
+}
+#header .main .register .wrapper p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0;
+}
+#header .main .register .wrapper .wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+#header .main .register .wrapper .wrapper .email {
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.452);
+  border: 1px solid #adb5bd;
+  border-radius: 5px;
+  height: 40px;
+  padding: 0.5em;
+  color: #ffffff;
+  width: 400px;
+}
+#header .main .register .wrapper .wrapper button {
+  color: white;
+  font-size: 1.5em;
+  height: 40px;
+  width: 200px;
+  background-color: red;
+  padding: 0 0.5em;
+  border: none;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  #header .main .register .wrapper .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  #header .main .register .wrapper .wrapper .email {
+    height: 50px;
+  }
+  #header .main .register .wrapper .wrapper button {
+    height: 50px;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
