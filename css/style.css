@@ -32,7 +32,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  position: absolute;
+  position: relative;
 }
 #header .bg-img {
   background-image: url("/image/bg-1.jpg");
@@ -105,6 +105,60 @@ body {
   margin-left: 5px;
 }
 
+/***** Main Section Start *****/
+main .feature {
+  height: 600px;
+  border-top: #252525 solid 5px;
+  padding: 50px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+main .feature .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main .feature .container .text {
+  width: 50%;
+}
+main .feature .container .text h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
+main .feature .container .text p {
+  color: white;
+  font-size: 1.5rem;
+}
+main .feature .container .box-container {
+  width: 50%;
+  overflow: hidden;
+}
+main .feature .container .box-container .box {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+main .feature .container .box-container .box video {
+  position: absolute;
+  top: 15%;
+  left: 13%;
+  width: 75%;
+  margin: auto;
+}
+main .feature .container .box-container .box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+}
+main .feature.third {
+  height: 300px !important;
+}
+
+/***** Main Section Section *****/
 @media screen and (max-width: 500px) {
   #header .main .register .wrapper .wrapper {
     flex-direction: column;
@@ -117,5 +171,37 @@ body {
     height: 50px;
     margin-left: 0px;
     margin-top: 10px;
+  }
+}
+/***** Media Screen *****/
+@media screen and (max-width: 900px) {
+  #main .feature .container {
+    flex-flow: column;
+  }
+  #main .feature .container .text {
+    width: 100%;
+  }
+  #main .feature .container .text h1 {
+    text-align: center;
+  }
+  #main .feature .container .text p {
+    text-align: center;
+  }
+  #main .feature .container .box-container {
+    width: 100%;
+  }
+  #main .feature .container .box-container .box {
+    width: 500px;
+  }
+  #main .feature .container .box-container .box video {
+    top: 15%;
+    left: 13%;
+    width: 75%;
+  }
+  #main .feature .container .box-container .box img {
+    width: 100%;
+  }
+  #main .feature.second .box-container, #main .feature.forth .box-container {
+    order: 2;
   }
 }/*# sourceMappingURL=style.css.map */
