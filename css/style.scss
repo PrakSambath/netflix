@@ -1,8 +1,9 @@
-$section_border: #252525 solid 5px;
+@import "variable.scss";
+
 
 
 body {
-    background-color: #000000;
+    background-color: $black;
 
 }
 /***** Navigation *****/
@@ -27,8 +28,8 @@ body {
         }
         
         button{
-            background-color: red;
-            border-color: red;
+            background-color: $red;
+            border-color: $red;
             height: 30px;
             width: 60px;
         }
@@ -57,7 +58,6 @@ body {
     }
 
     .bg-shadow {
-        // background-color: #000000;
         background-image: linear-gradient(rgba(0, 0, 0, 0.8),
                                         rgba(0, 0, 0, 0) 30%,
                                         rgba(0, 0, 0, 0.3) 60%);
@@ -70,59 +70,47 @@ body {
 
     .main {
         z-index: 2;
+
+        .title {
+            font-size: 3rem;
+            color: $white;
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+        }
+
+        .sub-title {
+            color: $white;
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 0;
+        }
+
         .register {
-            display: flex;
-            flex-direction: column;
-            .title {
-                font-size: 3rem;
-                color: #ffffff;
-                font-weight: bold;
-                text-align: center;
-                margin: 0;
-            }
-
-            .sub-title {
-                color: #ffffff;
-                font-size: 1.5rem;
-                text-align: center;
-                margin: 0;
-            }
-            .wrapper {
-
-                p {
-                    color: #ffffff;
-                    text-align: center;
+            form {
+                .header {
                     font-size: 1.4rem;
-                    margin: 0;
+                    color: $white;
+                    text-align: center;
+                    padding: 5px;
                 }
 
-                .wrapper {
-                    display: flex;
+                .row {
                     justify-content: center;
-                    padding: 0;
 
-                    .email {
-                        font-size: 1rem;
-                        background-color: rgba(0, 0, 0, 0.452);
-                        border: 1px solid #adb5bd;
-                        border-radius: 5px;
-                        height: 40px;
-                        padding: .5em;
-                        color: #ffffff;
-                        width: 400px;
+                    .form-floating {
+                        width: 500px;
+                    }
+                    .form-control {
+                        height: 60px;
                     }
     
                     button {
-                        color: white;
-                        font-size: 1.5em;
-                        height: 40px;
-                        width: 200px;
-                        background-color: red;
-                        padding: 0 .5em;
+                        height: 60px;
+                        width: 150px;
+                        background-color: $red;
                         border: none;
-                        border-radius: 5px;
-                        margin-left: 5px;
-                        
+                        font-size: 1.5rem;
                     }
                 }
                 
@@ -150,14 +138,14 @@ main {
                 width: 50%;
                 
                 h1 {
-                    color: white;
+                    color: $white;
                     font-size: 3rem;
                     font-weight: bold;
 
                 }
 
                 p {
-                    color: white;
+                    color: $white;
                     font-size: 1.5rem;
                 }
             }
@@ -196,38 +184,98 @@ main {
             height: 300px !important;
         }
     }
-}
-/***** Main Section Section *****/
 
+    // FAQ Section Start
+    .faq {
+        border-top: $section_border;
+        padding: 50px 0;
+        box-sizing: border-box;
+        overflow: hidden;
 
-@media screen and (max-width:500px){
+        .faq-header {
+            h1{
+                color: $white;
+                font-size: 3rem;
+                font-weight: bold;
+                text-align: center;
+                padding: 1rem 0;
+            }
+
+        }
+
+        .accordion-item {
+            border: none;
+            margin: 5px 0;
+            background-color: $black !important;
+
+            .accordion-button {
+                background-color: $gray;
+                color: $white;
+                font-size: 1.6rem;
+                box-shadow: none !important;
+                padding: 25px;
+
+                &:hover {
+                    background-color: $light-gray;
+                }
+
+                &::after {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' class='bi bi-plus-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/%3E%3C/svg%3E");
+                }
+                &:not(.collapsed)::after {
+                    transform: rotate(45deg);
+                }
+            }
+
+            .accordion-body {
+                background-color: $light-gray;
+                color: $white;
+                font-size: 1.4rem;
+                margin-top: 2px;
+            }
+
+        }
+
+        .register {
+            form {
+                .header {
+                    font-size: 1.5rem;
+                    color: $white;
+                    text-align: center;
+                    padding: 5px;
+                }
+
+                .row {
+                    justify-content: center;
+
+                    .form-floating {
+                        width: 500px;
+                    }
+                    .form-control {
+                        height: 60px;
+                    }
     
-    #header {
-        .main {
-            .register {
-                .wrapper{
-                    .wrapper {
-                        flex-direction: column;
-                        align-items: center;
-    
-                        .email{
-                            height: 50px;
-                        }
-                        button {
-                            height: 50px;
-                            margin-left: 0px;
-                            margin-top: 10px;
-                        }
+                    button {
+                        height: 60px;
+                        width: 150px;
+                        background-color: $red;
+                        border: none;
+                        font-size: 1.5rem;
                     }
                 }
+
                 
             }
         }
     }
+    // FAQ Section End
 }
+/***** Main Section End *****/
+
+
 
 /***** Media Screen *****/
-@media  screen and (max-width:900px) {
+@media  screen and (max-width:1024px) {
     #main {
         .feature {
             .container {
@@ -273,6 +321,25 @@ main {
 
         }
 
+        
+
+    }
+
+    #header, #main {
+        .faq {
+            .register {
+                form {
+                    .row {
+                        flex-direction: column;
+                        align-items: center;
+
+                        .form-control {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
     }
     
 }

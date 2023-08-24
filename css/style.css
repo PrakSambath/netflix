@@ -21,8 +21,8 @@ body {
   width: auto;
 }
 #nav .container button {
-  background-color: red;
-  border-color: red;
+  background-color: #ff0000;
+  border-color: #ff0000;
   height: 30px;
   width: 60px;
 }
@@ -55,54 +55,40 @@ body {
 #header .main {
   z-index: 2;
 }
-#header .main .register {
-  display: flex;
-  flex-direction: column;
-}
-#header .main .register .title {
+#header .main .title {
   font-size: 3rem;
   color: #ffffff;
   font-weight: bold;
   text-align: center;
   margin: 0;
 }
-#header .main .register .sub-title {
+#header .main .sub-title {
   color: #ffffff;
   font-size: 1.5rem;
   text-align: center;
   margin: 0;
 }
-#header .main .register .wrapper p {
+#header .main .register form .header {
+  font-size: 1.4rem;
   color: #ffffff;
   text-align: center;
-  font-size: 1.4rem;
-  margin: 0;
+  padding: 5px;
 }
-#header .main .register .wrapper .wrapper {
-  display: flex;
+#header .main .register form .row {
   justify-content: center;
-  padding: 0;
 }
-#header .main .register .wrapper .wrapper .email {
-  font-size: 1rem;
-  background-color: rgba(0, 0, 0, 0.452);
-  border: 1px solid #adb5bd;
-  border-radius: 5px;
-  height: 40px;
-  padding: 0.5em;
-  color: #ffffff;
-  width: 400px;
+#header .main .register form .row .form-floating {
+  width: 500px;
 }
-#header .main .register .wrapper .wrapper button {
-  color: white;
-  font-size: 1.5em;
-  height: 40px;
-  width: 200px;
-  background-color: red;
-  padding: 0 0.5em;
+#header .main .register form .row .form-control {
+  height: 60px;
+}
+#header .main .register form .row button {
+  height: 60px;
+  width: 150px;
+  background-color: #ff0000;
   border: none;
-  border-radius: 5px;
-  margin-left: 5px;
+  font-size: 1.5rem;
 }
 
 /***** Main Section Start *****/
@@ -122,12 +108,12 @@ main .feature .container .text {
   width: 50%;
 }
 main .feature .container .text h1 {
-  color: white;
+  color: #ffffff;
   font-size: 3rem;
   font-weight: bold;
 }
 main .feature .container .text p {
-  color: white;
+  color: #ffffff;
   font-size: 1.5rem;
 }
 main .feature .container .box-container {
@@ -157,24 +143,72 @@ main .feature .container .box-container .box img {
 main .feature.third {
   height: 300px !important;
 }
-
-/***** Main Section Section *****/
-@media screen and (max-width: 500px) {
-  #header .main .register .wrapper .wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-  #header .main .register .wrapper .wrapper .email {
-    height: 50px;
-  }
-  #header .main .register .wrapper .wrapper button {
-    height: 50px;
-    margin-left: 0px;
-    margin-top: 10px;
-  }
+main .faq {
+  border-top: #252525 solid 5px;
+  padding: 50px 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
+main .faq .faq-header h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem 0;
+}
+main .faq .accordion-item {
+  border: none;
+  margin: 5px 0;
+  background-color: #000000 !important;
+}
+main .faq .accordion-item .accordion-button {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  font-size: 1.6rem;
+  box-shadow: none !important;
+  padding: 25px;
+}
+main .faq .accordion-item .accordion-button:hover {
+  background-color: #414141;
+}
+main .faq .accordion-item .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' class='bi bi-plus-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/%3E%3C/svg%3E");
+}
+main .faq .accordion-item .accordion-button:not(.collapsed)::after {
+  transform: rotate(45deg);
+}
+main .faq .accordion-item .accordion-body {
+  background-color: #414141;
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin-top: 2px;
+}
+main .faq .register form .header {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px;
+}
+main .faq .register form .row {
+  justify-content: center;
+}
+main .faq .register form .row .form-floating {
+  width: 500px;
+}
+main .faq .register form .row .form-control {
+  height: 60px;
+}
+main .faq .register form .row button {
+  height: 60px;
+  width: 150px;
+  background-color: #ff0000;
+  border: none;
+  font-size: 1.5rem;
+}
+
+/***** Main Section End *****/
 /***** Media Screen *****/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   #main .feature .container {
     flex-flow: column;
   }
@@ -203,5 +237,12 @@ main .feature.third {
   }
   #main .feature.second .box-container, #main .feature.forth .box-container {
     order: 2;
+  }
+  #header .faq .register form .row, #main .faq .register form .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  #header .faq .register form .row .form-control, #main .faq .register form .row .form-control {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
