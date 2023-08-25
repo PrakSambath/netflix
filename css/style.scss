@@ -13,7 +13,8 @@ body {
     left: 0;
     z-index: 9999;
     width: 100%;
-    padding-top: 10px;
+    height: 70px;
+    box-sizing: border-box;
 
     .container{
         display: flex;
@@ -39,7 +40,7 @@ body {
 
 
 #header {
-    height: 500px;
+    min-height: 500px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -58,9 +59,7 @@ body {
     }
 
     .bg-shadow {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8),
-                                        rgba(0, 0, 0, 0) 30%,
-                                        rgba(0, 0, 0, 0.3) 60%);
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
         width: 100%;
         height: 100%;
         position: absolute;
@@ -70,6 +69,8 @@ body {
 
     .main {
         z-index: 2;
+        padding-top: 70px;
+        padding-bottom: 70px;
 
         .title {
             color: $color-text;
@@ -85,44 +86,47 @@ body {
             margin: 0;
         }
 
-        .register {
-            form {
-                .header {
-                    font: $font-style-normal;
-                    color: $color-text;
-                    text-align: center;
-                    padding: 5px;
-                }
 
-                .row {
-                    justify-content: center;
-
-                    .form-floating {
-                        width: 500px;
-                    }
-                    .form-control {
-                        height: 60px;
-                    }
-    
-                    button {
-                        height: 60px;
-                        width: 150px;
-                        background-color: $red;
-                        border: none;
-                        font: $font-style-normal;
-                    }
-                }
-                
-            }
-        }
     }
 }
 
+.register {
+    form {
+        .header {
+            font: $font-style-normal;
+            color: $color-text;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .row {
+            justify-content: center;
+
+            .form-floating {
+                max-width: 400px;
+            }
+            .form-control {
+                height: 60px;
+            }
+
+            button {
+                height: 60px;
+                width: 150px;
+                background-color: $red;
+                border: none;
+                font: $font-style-normal;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+        
+    }
+}
 
 /***** Main Section Start *****/
 main {
     .feature {
-        height: 600px;
+        // max-height: 600px;
         border-top: $section_border;
         padding: 50px 0;
         box-sizing: border-box;
@@ -154,22 +158,19 @@ main {
 
                 .box {
                     position: relative;
-                    width: 500px;
-                    height: 500px;
+                    // width: 500px;
+                    // height: 500px;
                     margin: auto;
 
                     video {
                         position: absolute;
-                        top: 15%;
+                        top: 20%;
                         left: 13%;
                         width: 75%;
                         margin: auto;
                     }
 
                     img {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
                         width: 100%;
                         margin: auto;
                     }
@@ -233,37 +234,7 @@ main {
 
         }
 
-        .register {
-            form {
-                .header {
-                    font-size: 1.5rem;
-                    color: $white;
-                    text-align: center;
-                    padding: 5px;
-                }
 
-                .row {
-                    justify-content: center;
-
-                    .form-floating {
-                        width: 500px;
-                    }
-                    .form-control {
-                        height: 60px;
-                    }
-    
-                    button {
-                        height: 60px;
-                        width: 150px;
-                        background-color: $red;
-                        border: none;
-                        font-size: 1.5rem;
-                    }
-                }
-
-                
-            }
-        }
     }
     // FAQ Section End
 }
@@ -276,11 +247,9 @@ main {
     border-top: $section_border;
 
     .container {
-        // padding: 20px 0;
         padding-top: 20px;
         padding-bottom: 20px;
-        font: $font-style-small;
-        color: $color-text;
+
         ul {
             list-style: none;
         }
@@ -289,14 +258,18 @@ main {
         }
         
         .footer-header {
-
+            font: $font-style-small;
+            color: $color-text;
         }
 
         .footer-body {
-
+            font: $font-style-small;
+            color: $color-text;
         }
 
         .footer-footer {
+            font: $font-style-small;
+            color: $color-text;
             button {
                 background-color: $black-900;
             }
@@ -326,13 +299,13 @@ main {
                     }
                 }
                 .box-container {
-                    width: 100%;
+                    width: 70%;
 
                     .box {
-                        width: 500px;
+                        // width: 500px;
 
                         video {
-                            top: 15%;
+                            top: 20%;
                             left: 13%;
                             width: 75%;
                         }
@@ -374,5 +347,17 @@ main {
             }
         }
     }
+    
+}
+
+@media screen and (max-width:768px) {
+    h1 {
+        font: 700 2.5rem "arial" !important;
+    }
+
+    p, span {
+        font: 400 1.2rem "arial" !important;
+    }
+
     
 }
