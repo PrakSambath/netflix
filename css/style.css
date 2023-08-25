@@ -56,21 +56,20 @@ body {
   z-index: 2;
 }
 #header .main .title {
-  font-size: 3rem;
-  color: #ffffff;
-  font-weight: bold;
+  color: #fff;
+  font: 900 3rem "arial";
   text-align: center;
   margin: 0;
 }
 #header .main .sub-title {
-  color: #ffffff;
-  font-size: 1.5rem;
+  color: #fff;
+  font: 400 1.5rem "arial";
   text-align: center;
   margin: 0;
 }
 #header .main .register form .header {
-  font-size: 1.4rem;
-  color: #ffffff;
+  font: 400 1.5rem "arial";
+  color: #fff;
   text-align: center;
   padding: 5px;
 }
@@ -88,7 +87,7 @@ body {
   width: 150px;
   background-color: #ff0000;
   border: none;
-  font-size: 1.5rem;
+  font: 400 1.5rem "arial";
 }
 
 /***** Main Section Start *****/
@@ -108,13 +107,12 @@ main .feature .container .text {
   width: 50%;
 }
 main .feature .container .text h1 {
-  color: #ffffff;
-  font-size: 3rem;
-  font-weight: bold;
+  color: #fff;
+  font: 900 3rem "arial";
 }
 main .feature .container .text p {
-  color: #ffffff;
-  font-size: 1.5rem;
+  color: #fff;
+  font: 400 1.5rem "arial";
 }
 main .feature .container .box-container {
   width: 50%;
@@ -150,9 +148,8 @@ main .faq {
   overflow: hidden;
 }
 main .faq .faq-header h1 {
-  color: #ffffff;
-  font-size: 3rem;
-  font-weight: bold;
+  color: #fff;
+  font: 900 3rem "arial";
   text-align: center;
   padding: 1rem 0;
 }
@@ -163,8 +160,8 @@ main .faq .accordion-item {
 }
 main .faq .accordion-item .accordion-button {
   background-color: #2d2d2d;
-  color: #ffffff;
-  font-size: 1.6rem;
+  color: #fff;
+  font: 400 1.5rem "arial";
   box-shadow: none !important;
   padding: 25px;
 }
@@ -179,8 +176,8 @@ main .faq .accordion-item .accordion-button:not(.collapsed)::after {
 }
 main .faq .accordion-item .accordion-body {
   background-color: #414141;
-  color: #ffffff;
-  font-size: 1.4rem;
+  color: #fff;
+  font: 400 1.5rem "arial";
   margin-top: 2px;
 }
 main .faq .register form .header {
@@ -207,6 +204,27 @@ main .faq .register form .row button {
 }
 
 /***** Main Section End *****/
+/***** Footer Section Start *****/
+#footer {
+  border-top: #252525 solid 5px;
+}
+#footer .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font: 400 1rem/1.5rem "arial";
+  color: #fff;
+}
+#footer .container ul {
+  list-style: none;
+}
+#footer .container a {
+  color: inherit;
+}
+#footer .container .footer-footer button {
+  background-color: #000;
+}
+
+/***** Footer Section End *****/
 /***** Media Screen *****/
 @media screen and (max-width: 1024px) {
   #main .feature .container {

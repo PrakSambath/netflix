@@ -72,16 +72,15 @@ body {
         z-index: 2;
 
         .title {
-            font-size: 3rem;
-            color: $white;
-            font-weight: bold;
+            color: $color-text;
+            font: $font-style-header;
             text-align: center;
             margin: 0;
         }
 
         .sub-title {
-            color: $white;
-            font-size: 1.5rem;
+            color: $color-text;
+            font: $font-style-normal;
             text-align: center;
             margin: 0;
         }
@@ -89,8 +88,8 @@ body {
         .register {
             form {
                 .header {
-                    font-size: 1.4rem;
-                    color: $white;
+                    font: $font-style-normal;
+                    color: $color-text;
                     text-align: center;
                     padding: 5px;
                 }
@@ -110,7 +109,7 @@ body {
                         width: 150px;
                         background-color: $red;
                         border: none;
-                        font-size: 1.5rem;
+                        font: $font-style-normal;
                     }
                 }
                 
@@ -138,15 +137,14 @@ main {
                 width: 50%;
                 
                 h1 {
-                    color: $white;
-                    font-size: 3rem;
-                    font-weight: bold;
+                    color: $color-text;
+                    font: $font-style-header;
 
                 }
 
                 p {
-                    color: $white;
-                    font-size: 1.5rem;
+                    color: $color-text;
+                    font: $font-style-normal;
                 }
             }
 
@@ -194,9 +192,8 @@ main {
 
         .faq-header {
             h1{
-                color: $white;
-                font-size: 3rem;
-                font-weight: bold;
+                color: $color-text ;
+                font: $font-style-header;
                 text-align: center;
                 padding: 1rem 0;
             }
@@ -210,8 +207,8 @@ main {
 
             .accordion-button {
                 background-color: $gray;
-                color: $white;
-                font-size: 1.6rem;
+                color: $color-text;
+                font: $font-style-normal;
                 box-shadow: none !important;
                 padding: 25px;
 
@@ -229,8 +226,8 @@ main {
 
             .accordion-body {
                 background-color: $light-gray;
-                color: $white;
-                font-size: 1.4rem;
+                color: $color-text;
+                font: $font-style-normal;
                 margin-top: 2px;
             }
 
@@ -271,6 +268,42 @@ main {
     // FAQ Section End
 }
 /***** Main Section End *****/
+
+
+
+/***** Footer Section Start *****/
+#footer {
+    border-top: $section_border;
+
+    .container {
+        // padding: 20px 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font: $font-style-small;
+        color: $color-text;
+        ul {
+            list-style: none;
+        }
+        a {
+            color: inherit;
+        }
+        
+        .footer-header {
+
+        }
+
+        .footer-body {
+
+        }
+
+        .footer-footer {
+            button {
+                background-color: $black-900;
+            }
+        }
+    }
+}
+/***** Footer Section End *****/
 
 
 
