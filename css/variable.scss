@@ -7,6 +7,7 @@ $white: #ffffff;
 $black: #000000;
 $red: #ff0000;
 $tranparent: #0000004f;
+
 $section_border: #252525 solid 5px;
 $color-text: #fff;
 $color-bg: #000;
@@ -15,3 +16,7 @@ $font-style-small: 400 1rem/1.5rem "arial";
 $font-style-header: 900 3rem "arial";
 $fs-2: 400 1.5rem "arial";
 $fs-4: 900 3rem "arial";
+$input-border: .1rem solid $color-text;
+$button-border: .1rem solid $red;
+$tranparent-100: rgba(0, 0, 0, 0.1);
+$tranparent-500: rgba(0, 0, 0, 0.5);

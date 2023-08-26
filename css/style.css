@@ -2,14 +2,15 @@ body {
   background-color: #000000;
 }
 
-/***** Navigation *****/
+/***** Navigation Section Start *****/
 #nav {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 9999;
   width: 100%;
-  padding-top: 10px;
+  height: 70px;
+  box-sizing: border-box;
 }
 #nav .container {
   display: flex;
@@ -27,8 +28,10 @@ body {
   width: 60px;
 }
 
+/***** Navigation Section End *****/
+/***** Header Section Start *****/
 #header {
-  height: 500px;
+  min-height: 500px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -46,7 +49,7 @@ body {
   z-index: 0;
 }
 #header .bg-shadow {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.3) 60%);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -54,6 +57,8 @@ body {
 }
 #header .main {
   z-index: 2;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 #header .main .title {
   color: #fff;
@@ -67,140 +72,135 @@ body {
   text-align: center;
   margin: 0;
 }
-#header .main .register form .header {
+
+.email-register .header {
   font: 400 1.5rem "arial";
   color: #fff;
   text-align: center;
   padding: 5px;
 }
-#header .main .register form .row {
+.email-register .wrapper {
+  display: flex;
   justify-content: center;
 }
-#header .main .register form .row .form-floating {
-  width: 500px;
+.email-register .wrapper .input-floating {
+  max-width: 400px;
+  height: 40px;
+  flex-grow: 1;
 }
-#header .main .register form .row .form-control {
-  height: 60px;
+.email-register .wrapper .input-floating input {
+  height: 40px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0.1rem solid #fff;
+  border-radius: 0.2rem;
+  color: #fff;
+  padding: 0.5rem;
+  box-sizing: border-box;
 }
-#header .main .register form .row button {
-  height: 60px;
-  width: 150px;
+.email-register .wrapper .input-floating input::-moz-placeholder {
+  color: #fff;
+}
+.email-register .wrapper .input-floating input::placeholder {
+  color: #fff;
+}
+.email-register .wrapper button {
+  height: 40px;
   background-color: #ff0000;
-  border: none;
+  border: 0.1rem solid #ff0000;
   font: 400 1.5rem "arial";
+  border-radius: 0.2rem;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  color: #fff;
 }
 
+/***** Header Section End *****/
 /***** Main Section Start *****/
-main .feature {
-  height: 600px;
+#main .feature .feature-item {
   border-top: #252525 solid 5px;
   padding: 50px 0;
-  box-sizing: border-box;
-  overflow: hidden;
 }
-main .feature .container {
+#main .feature .feature-item .container {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-main .feature .container .text {
+#main .feature .feature-item .container .text {
   width: 50%;
 }
-main .feature .container .text h1 {
+#main .feature .feature-item .container .text h1 {
   color: #fff;
   font: 900 3rem "arial";
 }
-main .feature .container .text p {
+#main .feature .feature-item .container .text p {
   color: #fff;
   font: 400 1.5rem "arial";
 }
-main .feature .container .box-container {
+#main .feature .feature-item .container .figure {
   width: 50%;
   overflow: hidden;
 }
-main .feature .container .box-container .box {
+#main .feature .feature-item .container .figure .wrapper {
   position: relative;
-  width: 500px;
-  height: 500px;
   margin: auto;
 }
-main .feature .container .box-container .box video {
+#main .feature .feature-item .container .figure .wrapper video {
   position: absolute;
-  top: 15%;
+  top: 20%;
   left: 13%;
   width: 75%;
   margin: auto;
 }
-main .feature .container .box-container .box img {
-  position: absolute;
-  top: 0;
-  left: 0;
+#main .feature .feature-item .container .figure .wrapper img {
   width: 100%;
   margin: auto;
 }
-main .feature.third {
+#main .feature .feature-item:nth-child(even) .text {
+  order: 1;
+}
+#main .feature.third {
   height: 300px !important;
 }
-main .faq {
+#main .faq {
   border-top: #252525 solid 5px;
   padding: 50px 0;
   box-sizing: border-box;
   overflow: hidden;
 }
-main .faq .faq-header h1 {
+#main .faq .faq-header h1 {
   color: #fff;
   font: 900 3rem "arial";
   text-align: center;
   padding: 1rem 0;
 }
-main .faq .accordion-item {
+#main .faq .accordion-item {
   border: none;
   margin: 5px 0;
   background-color: #000000 !important;
 }
-main .faq .accordion-item .accordion-button {
+#main .faq .accordion-item .accordion-button {
   background-color: #2d2d2d;
   color: #fff;
   font: 400 1.5rem "arial";
   box-shadow: none !important;
   padding: 25px;
 }
-main .faq .accordion-item .accordion-button:hover {
+#main .faq .accordion-item .accordion-button:hover {
   background-color: #414141;
 }
-main .faq .accordion-item .accordion-button::after {
+#main .faq .accordion-item .accordion-button::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' class='bi bi-plus-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/%3E%3C/svg%3E");
 }
-main .faq .accordion-item .accordion-button:not(.collapsed)::after {
+#main .faq .accordion-item .accordion-button:not(.collapsed)::after {
   transform: rotate(45deg);
 }
-main .faq .accordion-item .accordion-body {
+#main .faq .accordion-item .accordion-body {
   background-color: #414141;
   color: #fff;
   font: 400 1.5rem "arial";
   margin-top: 2px;
-}
-main .faq .register form .header {
-  font-size: 1.5rem;
-  color: #ffffff;
-  text-align: center;
-  padding: 5px;
-}
-main .faq .register form .row {
-  justify-content: center;
-}
-main .faq .register form .row .form-floating {
-  width: 500px;
-}
-main .faq .register form .row .form-control {
-  height: 60px;
-}
-main .faq .register form .row button {
-  height: 60px;
-  width: 150px;
-  background-color: #ff0000;
-  border: none;
-  font-size: 1.5rem;
 }
 
 /***** Main Section End *****/
@@ -211,14 +211,24 @@ main .faq .register form .row button {
 #footer .container {
   padding-top: 20px;
   padding-bottom: 20px;
-  font: 400 1rem/1.5rem "arial";
-  color: #fff;
 }
 #footer .container ul {
   list-style: none;
 }
 #footer .container a {
   color: inherit;
+}
+#footer .container .footer-header {
+  font: 400 1rem/1.5rem "arial";
+  color: #fff;
+}
+#footer .container .footer-body {
+  font: 400 1rem/1.5rem "arial";
+  color: #fff;
+}
+#footer .container .footer-footer {
+  font: 400 1rem/1.5rem "arial";
+  color: #fff;
 }
 #footer .container .footer-footer button {
   background-color: #000;
@@ -227,40 +237,32 @@ main .faq .register form .row button {
 /***** Footer Section End *****/
 /***** Media Screen *****/
 @media screen and (max-width: 1024px) {
-  #main .feature .container {
-    flex-flow: column;
+  #main .feature .feature-item .container {
+    flex-direction: column;
   }
-  #main .feature .container .text {
+  #main .feature .feature-item .container .text {
     width: 100%;
-  }
-  #main .feature .container .text h1 {
+    order: 1;
     text-align: center;
   }
-  #main .feature .container .text p {
-    text-align: center;
-  }
-  #main .feature .container .box-container {
-    width: 100%;
-  }
-  #main .feature .container .box-container .box {
-    width: 500px;
-  }
-  #main .feature .container .box-container .box video {
-    top: 15%;
-    left: 13%;
-    width: 75%;
-  }
-  #main .feature .container .box-container .box img {
-    width: 100%;
-  }
-  #main .feature.second .box-container, #main .feature.forth .box-container {
+  #main .feature .feature-item .container .figure {
+    width: 70%;
     order: 2;
   }
-  #header .faq .register form .row, #main .faq .register form .row {
+  .email-register .wrapper {
     flex-direction: column;
     align-items: center;
   }
-  #header .faq .register form .row .form-control, #main .faq .register form .row .form-control {
+  .email-register .wrapper .input-floating {
     width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font: 700 2.5rem "arial" !important;
+  }
+  p, span {
+    font: 400 1.2rem "arial" !important;
   }
 }/*# sourceMappingURL=style.css.map */
