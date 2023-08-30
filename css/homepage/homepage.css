@@ -1,0 +1,268 @@
+/***** Navigation Section Start *****/
+#nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 75px;
+  padding: 16px;
+}
+#nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav .container #brand {
+  height: 35px;
+}
+#nav .container #brand img {
+  height: 100%;
+  width: auto;
+}
+#nav .container #menu {
+  display: none;
+  flex-grow: 1;
+}
+#nav .container #menu ul li {
+  display: inline-block;
+  padding: 10px;
+}
+#nav .container #menu ul li:first-child a {
+  font-weight: bold;
+}
+#nav .container #sign-in button {
+  height: 28px;
+  width: 68px;
+}
+
+/***** Navigation Section End *****/
+.email-register .header {
+  text-align: center;
+  padding: 5px;
+}
+.email-register .wrapper {
+  display: flex;
+  justify-content: center;
+}
+.email-register .wrapper .input-floating {
+  height: 50px;
+  width: 400px;
+}
+.email-register .wrapper .input-floating input {
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+.email-register .wrapper button {
+  height: 50px;
+  width: 178px;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+/***** Main Section Start *****/
+#main #feature .feature-item {
+  overflow: hidden;
+  padding: 37px;
+  box-sizing: border-box;
+}
+#main #feature .feature-item.top {
+  height: 615px;
+  overflow: hidden;
+  position: relative;
+}
+#main #feature .feature-item.top .bg-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-image: url("/image/bg-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#main #feature .feature-item.top .bg-shadow {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#main #feature .feature-item.top .container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#main #feature .feature-item:not(.top) {
+  border-top: #2d2d2d solid 5px;
+  height: 544px;
+  display: flex;
+  justify-content: center;
+}
+#main #feature .feature-item:not(.top) .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+}
+#main #feature .feature-item:not(.top) .container .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#main #feature .feature-item:not(.top) .container .figure .wrapper {
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#main #feature .feature-item:not(.top) .container .figure .wrapper video {
+  position: absolute;
+  margin: auto;
+}
+#main #feature .feature-item:not(.top) .container .figure .wrapper img {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+#main #feature .feature-item:not(.top):nth-child(odd) .text {
+  order: 1;
+}
+#main #feature .feature-item:not(.top).no-figure {
+  height: 340px;
+}
+#main #faq {
+  border-top: #2d2d2d solid 5px;
+  padding: 50px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#main #faq #faq-header h1 {
+  text-align: center;
+  padding: 1rem 0;
+}
+#main #faq .accordion-item {
+  border: none;
+  margin: 5px 0;
+  background-color: #000 !important;
+}
+#main #faq .accordion-item .accordion-button {
+  background-color: #2d2d2d;
+  box-shadow: none !important;
+  padding: 25px;
+  height: 70px;
+}
+#main #faq .accordion-item .accordion-button:hover {
+  background-color: #414141;
+}
+#main #faq .accordion-item .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' class='bi bi-plus-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/%3E%3C/svg%3E");
+}
+#main #faq .accordion-item .accordion-button:not(.collapsed)::after {
+  transform: rotate(45deg);
+}
+#main #faq .accordion-item .accordion-body {
+  background-color: #414141;
+  margin-top: 2px;
+}
+#main #faq .email-register input {
+  border-color: #00FF47;
+}
+
+/***** Main Section End *****/
+/***** Footer Section Start *****/
+#footer {
+  border-top: #2d2d2d solid 5px;
+  color: #ffffff;
+}
+#footer .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#footer .container a {
+  color: inherit;
+  text-decoration: underline;
+}
+#footer .container #footer-footer button {
+  background-color: #000;
+  border: 0.1rem solid #ffffff;
+}
+
+/***** Footer Section End *****/
+/***** Media Screen Start*****/
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 12px;
+  }
+  #main #feature .feature-item.top {
+    height: 345px;
+  }
+  #main #feature .feature-item:not(.top) {
+    height: 400px;
+  }
+  #main #feature .feature-item:not(.top) .container {
+    flex-direction: column;
+  }
+  #main #feature .feature-item:not(.top) .container .text {
+    width: 100%;
+    order: 1;
+    text-align: center;
+  }
+  #main #feature .feature-item:not(.top) .container .figure {
+    width: 100%;
+    height: 100%;
+    order: 2;
+  }
+  #main #feature .feature-item:not(.top) .container .figure video {
+    width: 100%;
+  }
+  #main #feature .feature-item:not(.top).no-figure {
+    height: 180px;
+  }
+  #main #faq .accordion-item .accordion-button {
+    height: 50px;
+  }
+  #footer {
+    font-size: 10px;
+  }
+  #footer button {
+    font-size: inherit;
+  }
+  .email-register .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .email-register .wrapper .input-floating {
+    width: 250px;
+    height: 32px;
+  }
+  .email-register .wrapper .input-floating input {
+    height: 100%;
+    width: 100%;
+  }
+  .email-register .wrapper button {
+    height: 32px;
+    width: 110px;
+    margin-top: 13px;
+    font-size: 1rem;
+  }
+}
+/***** Media Screen End *****//*# sourceMappingURL=homepage.css.map */
