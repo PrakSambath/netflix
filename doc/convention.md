@@ -1,8 +1,22 @@
 # Convention Guide
 
-## 1. Git Management
+## 1. Folder structure
+```
+css
+└── All css file goes here.
+doc
+└── All documentation and related file goes here.
+image
+└── All image file goes here.
+js
+└── All javascript file goes here.
+index.html
+README.md
+```
 
-### 1.1. Branch
+## 2. Git Management
+
+### 2.1. Branch
 - Use `develop` branch as base source code.
 - Use `feature` branch for updating new feature.
 - Use `bugfix` branch for resolving bug after updating new feature.
@@ -10,45 +24,64 @@
 - Use `hotfix` branch for resolving issue according to QA test feedback.
 - Use `main` branch for releasing to public.
 
-### 1.2. Push/Pull
+### 2.2. Push/Pull
 - Create specific issue before developing/resolving any new issue
 - **Always** use `git pull` to fetch the latest version before making any change
 - Create pull request after developing/solving issue
 
 
-## 2. Naming Rule / Property
+## 3. File Naming Rule
 
-### 2.1. General Naming Rule
 - Use `lowercase` for folder and file name.
-- Use `underscore` (_) to seperate word of folder or file.
+- Use `dash` (-) to seperate word of folder or file.
 - Name folder and file according to its purpose.
 - Name should be meaningful
 
-### 2.2. HTML
+## 4. HTML
 
 - Use semantic tag (`header, nav, main, sidebar, footer`)
 - Use `<ul>` to create list
-- Use `.container` class for all upper parent tag
-- Use `class` to style the element
-- **Don't** use `inline` css
-- Only use `external` css
+- Use `external` css
 - Don't use `id` if not neccessary
+```
+<body>
+    // header section
+    <header></header>
 
-### 2.3. CSS / SCSS
+    // navigation section
+    <nav></nav>
+
+    // main section
+    <main></main>
+
+    // footer section
+    <footer></footer>
+</body>
+
+```
+
+## 5. CSS / SCSS
 - Use `lowercase` for naming
 - Use `dash` (-) to seperate word
-- Font family ...
-- Font size using `em` or `rem`
-    - Title
-    - Paragraph
+- Font size using `em` or `rem`     
 
-### 2.4. Javascript
+**color**   
+logo `color-primary`    
+text `color-secondary`  
+background `color-dark-1`   
+
+**Font**    
+font-family `"Roboto", "sans-serif"`    
+**Font size**   
+font-size large: `3rem`  
+font-size medium: `1.5rem`   
+font-size small: `1rem`   
+
+
+## 6. Javascript
 - Use `Camel case` for naming variable and function.
 - Use `let` to declare variable.
-- Use `variable` to store value.
 
-## 3. Grid System
+## 7. Grid System
 - Use bootstrap framework to organize grid column.
 - Use `12 columns` as blueprint
-- Use `margin` `left` and `right` `60px`
-- Gap between column `20px`

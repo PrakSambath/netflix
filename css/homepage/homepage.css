@@ -1,54 +1,3 @@
-/***** General Style Start *****/
-body {
-  background-color: #000;
-}
-
-input::-moz-placeholder {
-  color: #ffffff;
-}
-
-h1, h2, h3, p, input, input::placeholder, button, button.btn, span {
-  color: #ffffff;
-}
-
-input {
-  border-radius: 0.2rem;
-  border: 0.1rem solid #ffffff;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-button, button.btn {
-  background-color: #e50914;
-  border-radius: 0.2rem;
-  text-align: center;
-  border: none;
-  font: 400 1rem/1.5rem "Roboto", "sans-serif";
-}
-
-h1 {
-  font: 900 3rem "Roboto", "sans-serif";
-}
-
-p {
-  font: 400 1.5rem "Roboto", "sans-serif";
-  margin: 0;
-}
-
-ul, ol {
-  list-style: none;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-a:hover {
-  color: #aaaaaa;
-}
-
-/***** General Style End *****/
 /***** Navigation Section Start *****/
 #nav {
   position: absolute;
@@ -316,4 +265,4 @@ a:hover {
     font-size: 1rem;
   }
 }
-/***** Media Screen End *****//*# sourceMappingURL=style.css.map */
+/***** Media Screen End *****//*# sourceMappingURL=homepage.css.map */

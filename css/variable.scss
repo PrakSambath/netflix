@@ -1,22 +1,16 @@
-$black-900: #000;
-$black-700: #2d2d2d;
-$black-500: #414141;
-$light-gray: #414141;
-$gray: #2d2d2d;
-$white: #ffffff;
-$black: #000000;
-$red: #ff0000;
-$tranparent: #0000004f;
+$color-primary: #e50914;
+$color-secondary: #ffffff;
+$color-dark-1: #000;
+$color-dark-2: #2d2d2d;
+$color-dark-3: #414141;
+$color-dark-4: #aaaaaa;
+$color-stylish: #00FF47;
+$bg-transparent-1: rgba(0, 0, 0, .5);
 
-$section_border: #252525 solid 5px;
-$color-text: #fff;
-$color-bg: #000;
-$font-style-normal: 400 1.5rem "arial";
-$font-style-small: 400 1rem/1.5rem "arial";
-$font-style-header: 900 3rem "arial";
-$fs-2: 400 1.5rem "arial";
-$fs-4: 900 3rem "arial";
-$input-border: .1rem solid $color-text;
-$button-border: .1rem solid $red;
-$tranparent-100: rgba(0, 0, 0, 0.1);
-$tranparent-500: rgba(0, 0, 0, 0.5);
+// font-family: 'Roboto', sans-serif;
+$font-md: 400 1.5rem "Roboto", "sans-serif";
+$font-sm: 400 1rem/1.5rem "Roboto", "sans-serif"; 
+$font-lg: 900 3rem "Roboto", "sans-serif";
+
+$section_border: $color-dark-2 solid 5px;
+
