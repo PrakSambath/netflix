@@ -1,0 +1,381 @@
+@import "../variable.scss";
+
+
+
+/***** Navigation Section Start *****/
+#nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 75px;
+    padding: 16px;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #brand{
+            height: 35px;
+
+            img{
+                height: 100%;
+                width: auto;
+            }
+        }
+
+        #menu {
+            display: none;
+            flex-grow: 1;
+
+            ul {
+                li {
+                    display: inline-block;
+                    padding: 10px;
+
+                    &:first-child {
+                        a {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+
+        #sign-in {
+            button{
+                height: 28px;
+                width: 68px;
+            }    
+        }
+    }
+}
+/***** Navigation Section End *****/
+
+
+
+// Get start form
+.email-register {
+    .header {
+        text-align: center;
+        padding: 5px;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+
+        .input-floating {
+            // flex-grow: 1;
+            height: 50px;
+            width: 400px;
+
+            input {
+                height: 100%;
+                width: 100%;
+                padding: .5rem;
+                box-sizing: border-box;
+            }
+        }
+
+        button {
+            height: 50px;
+            width: 178px;
+            margin-left: 5px;
+            margin-right: 5px;
+            box-sizing: border-box;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+
+/***** Main Section Start *****/
+#main {
+    // Feature Section Start
+    #feature {
+        .feature-item {
+            overflow: hidden;
+            padding: 37px;
+            box-sizing: border-box;
+        }
+
+        .feature-item.top {
+            height: 615px;
+            overflow: hidden;
+            position: relative;
+
+            .bg-img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 0;
+                background-image: url("/image/bg-1.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        
+            .bg-shadow {
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+
+            .container {
+                position: relative;
+                z-index: 2;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                
+            }
+        }
+
+        .feature-item:not(.top) {
+            border-top: $section_border;
+            height: 544px;
+            display: flex;
+            justify-content: center;
+
+            .container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: auto;
+
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+    
+                .figure {
+                    .wrapper {
+                        position: relative;
+                        margin: auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+    
+                        video {
+                            position: absolute;
+                            margin: auto;
+                        }
+    
+                        img {
+                            position: relative;
+                            width: 100%;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+            
+            &:nth-child(odd){
+                .text {
+                    order: 1;
+                }
+            }
+
+            &.no-figure {
+                height: 340px;
+            }
+        }
+    }
+    // Feature Section End
+
+    // FAQ Section Start
+    #faq {
+        border-top: $section_border;
+        padding: 50px 0;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        #faq-header {
+            h1{
+                text-align: center;
+                padding: 1rem 0;
+            }
+        }
+
+        .accordion-item {
+            border: none;
+            margin: 5px 0;
+            background-color: $color-dark-1 !important;
+
+            .accordion-button {
+                background-color: $color-dark-2;
+                box-shadow: none !important;
+                padding: 25px;
+                height: 70px;
+
+                &:hover {
+                    background-color: $color-dark-3;
+                }
+
+                &::after {
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' class='bi bi-plus-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/%3E%3C/svg%3E");
+                }
+
+                &:not(.collapsed)::after {
+                    transform: rotate(45deg);
+                }
+            }
+
+            .accordion-body {
+                background-color: $color-dark-3;
+                margin-top: 2px;
+            }
+        }
+
+        .email-register {
+            input {
+                border-color: $color-stylish;
+            }
+        }
+    }
+    // FAQ Section End
+}
+/***** Main Section End *****/
+
+
+
+/***** Footer Section Start *****/
+#footer {
+    border-top: $section_border;
+    color: $color-secondary;
+
+    .container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        a {
+            color: inherit;
+            text-decoration: underline;
+        }
+
+        #footer-footer {
+            button {
+                background-color: $color-dark-1;
+                border: .1rem solid $color-secondary;
+            }
+        }
+    }
+}
+/***** Footer Section End *****/
+
+
+
+/***** Media Screen Start*****/
+@media  screen and (max-width:767px) {
+    // General Style Start
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+    // General Style End
+
+
+    
+    // Main Section Start
+    #main {
+        #feature {
+            .feature-item.top {
+                height: 345px;
+            }
+
+            .feature-item:not(.top) {
+                height: 400px;
+
+                .container {
+                    flex-direction: column;
+
+                    .text {
+                        width: 100%;
+                        order: 1;
+                        text-align: center;
+                    }
+
+                    .figure {
+                        width: 100%;
+                        height: 100%;
+                        order: 2;
+
+                        video {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &.no-figure {
+                    height: 180px;
+                }
+            }
+        }
+
+        #faq {
+            .accordion-item {
+                .accordion-button {
+                    height: 50px;
+                }
+            }
+        }
+    }
+    // Main Section End
+
+
+
+    // Footer Section Start
+    #footer {
+        font-size: 10px;
+
+        button {
+            font-size: inherit;
+        }
+    }
+    // Footer Section End
+
+
+
+    // Get started form
+    .email-register {
+            .wrapper {
+                flex-direction: column;
+                align-items: center;
+
+                .input-floating {
+                    width: 250px;
+                    height: 32px;
+                    input {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+
+                button {
+                    height: 32px;
+                    width: 110px;
+                    margin-top: 13px;
+                    font-size: 1rem;
+                }
+            }
+    }
+}
+/***** Media Screen End *****/
