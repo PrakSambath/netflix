@@ -1,0 +1,56 @@
+@import "./variable.scss";
+
+
+
+/***** General Style Start *****/
+body {
+    background-color: $color-dark-1;
+
+}
+
+h1, h2, h3, p, input, input::placeholder, button, button.btn, span {
+    color: $color-secondary;
+}
+
+input {
+    border-radius: .2rem;
+    border: .1rem solid $color-secondary;
+    background-color: $bg-transparent-1;
+}
+
+button, button.btn {
+    background-color: $color-primary;
+    border-radius: .2rem;
+    text-align: center;
+    border: none;
+    font: $font-sm;
+}
+// button:hover, button.btn:hover {
+//     color: $color-secondary;
+//     background-color: $color-primary;
+//     border: none;
+// }
+
+h1 {
+    font: $font-lg;
+}
+
+p {
+    font: $font-md;
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $color-secondary;
+}
+
+a:hover {
+    color: $color-dark-4;
+}
+/***** General Style End *****/
